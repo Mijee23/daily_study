@@ -1,0 +1,49 @@
+name: Daily Study Mail
+
+on:
+  schedule:
+    # 매일 오전 8시 (한국 시간 기준, UTC+9 = 23:00 UTC 전날)
+    - cron: '0 23 * * *'
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  send-mail:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Send daily mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: |
+          python daily_mailer.py
+
+      - name: Update progress
+        if: success()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add progress.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update progress: Day $(jq -r '.current_day - 1' progress.json)"
+
+      - name: Push changes
+        if: success()
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

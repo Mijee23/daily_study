@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 가상 환경
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 환경 변수
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 원본 PDF 파일 (용량이 크므로 GitHub에 올리지 않음)
+data/pharmacology/*.pdf
+data/anatomy/*.pdf
+
+# Windows Zone.Identifier 파일
+*:Zone.Identifier
+
+# 로그
+*.log

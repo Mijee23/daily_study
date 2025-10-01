@@ -1,0 +1,10 @@
+# Phase 1: setup.py용 (로컬에서만 사용)
+google-generativeai>=0.8.0
+PyPDF2>=3.0.0
+tqdm>=4.66.0
+
+# Phase 2: daily_mailer.py용 (GitHub Actions에서 사용)
+markdown2>=2.4.0
+
+# 공통
+python-dotenv>=1.0.0

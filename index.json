@@ -1,0 +1,84 @@
+{
+  "total_days": 6,
+  "created_at": "2025-10-01T11:29:59.783260Z",
+  "files": [
+    {
+      "day": 1,
+      "pharmacology": {
+        "original": "241010_임상치과약물치료학_우경미_만성통증 치료제.pdf",
+        "summary": "day01_pharmacology.md",
+        "title": "241010_임상치과약물치료학_우경미_만성통증 치료제"
+      },
+      "anatomy": {
+        "original": "241016_Parotidectomy_서미현.pdf",
+        "summary": "day01_anatomy.md",
+        "title": "241016_Parotidectomy_서미현"
+      }
+    },
+    {
+      "day": 2,
+      "pharmacology": {
+        "original": "250904_백정화_처방전과 금연요법.pdf",
+        "summary": "day02_pharmacology.md",
+        "title": "250904_백정화_처방전과 금연요법"
+      },
+      "anatomy": {
+        "original": "241023_maxilla_서병무.pdf",
+        "summary": "day02_anatomy.md",
+        "title": "241023_maxilla_서병무"
+      }
+    },
+    {
+      "day": 3,
+      "pharmacology": {
+        "original": "250918_김우진_보톡스.pdf",
+        "summary": "day03_pharmacology.md",
+        "title": "250918_김우진_보톡스"
+      },
+      "anatomy": {
+        "original": "250915_권익재_구강악안면 영역의 신경과 혈관 해부학.pdf",
+        "summary": "day03_anatomy.md",
+        "title": "250915_권익재_구강악안면 영역의 신경과 혈관 해부학"
+      }
+    },
+    {
+      "day": 4,
+      "pharmacology": {
+        "original": "250911_이윤실_구강건조증 치료제.pdf",
+        "summary": "day04_pharmacology.md",
+        "title": "250911_이윤실_구강건조증 치료제"
+      },
+      "anatomy": {
+        "original": "250917_한정준_Lip, Palate, Nose.pdf",
+        "summary": "day04_anatomy.md",
+        "title": "250917_한정준_Lip, Palate, Nose"
+      }
+    },
+    {
+      "day": 5,
+      "pharmacology": {
+        "original": "241010_임상치과약물치료학_우경미_지혈제와 수렴제.pdf",
+        "summary": "day05_pharmacology.md",
+        "title": "241010_임상치과약물치료학_우경미_지혈제와 수렴제"
+      },
+      "anatomy": {
+        "original": "250924_서병무_mandible.pdf",
+        "summary": "day05_anatomy.md",
+        "title": "250924_서병무_mandible"
+      }
+    },
+    {
+      "day": 6,
+      "pharmacology": {
+        "original": "250925_우경미_Drugs for Pain Management(1).pdf",
+        "summary": "day06_pharmacology.md",
+        "title": "250925_우경미_Drugs for Pain Management(1)"
+      },
+      "anatomy": {
+        "original": "241025_TMJ, SMAS_박주영.pdf",
+        "summary": "day06_anatomy.md",
+        "title": "241025_TMJ, SMAS_박주영"
+      }
+    }
+  ]
+}
