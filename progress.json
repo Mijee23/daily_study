@@ -1,7 +1,7 @@
 {
-  "current_day": 6,
-  "last_sent_date": "2025-10-05",
+  "current_day": 7,
+  "last_sent_date": "2025-10-06",
   "total_days": 6,
-  "completed": false,
-  "sent_count": 5
+  "completed": true,
+  "sent_count": 6
 }
